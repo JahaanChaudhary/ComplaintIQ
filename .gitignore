@@ -1,0 +1,40 @@
+# ===== BACKEND (Java / Spring Boot / Maven) =====
+backend/target/
+backend/build/
+backend/out/
+backend/.idea/
+backend/.vscode/
+backend/*.iml
+backend/HELP.md
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/logs/
+backend/*.log
+
+# ===== BACKEND SECRETS - NEVER COMMIT =====
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-prod.properties
+backend/.env
+backend/.env.local
+
+# ===== FRONTEND (Node.js / React / Vite) =====
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/coverage/
+frontend/.idea/
+frontend/.vscode/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+
+# ===== ROOT-LEVEL =====
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db

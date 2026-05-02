@@ -1,0 +1,34 @@
+# Compiled files
+target/
+*.class
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# Sensitive config — NEVER commit real credentials
+src/main/resources/application-local.properties
+
+# OS
+Thumbs.db``

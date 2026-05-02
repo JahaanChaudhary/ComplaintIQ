@@ -1,0 +1,15 @@
+# Copy this file to application-local.properties and fill in real values.
+# application-local.properties is gitignored to keep secrets safe.
+
+# Mail (Gmail App Password)
+spring.mail.username=your-email@gmail.com
+spring.mail.password=your-gmail-app-password
+
+# Google Gemini AI
+app.gemini.api-key=your-gemini-api-key
+
+# JWT (generate a 64-char random string)
+app.jwt.secret=replace-with-random-64-character-string
+
+# Database password
+spring.datasource.password=your-postgres-password

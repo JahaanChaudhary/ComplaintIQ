@@ -1,0 +1,109 @@
+# ===================================
+# Maven build output
+# ===================================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+dependency-reduced-pom.xml
+
+# ===================================
+# Gradle (if ever used)
+# ===================================
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# ===================================
+# IntelliJ IDEA
+# ===================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+cmake-build-*/
+
+# ===================================
+# Eclipse
+# ===================================
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.springBeans
+.factorypath
+.apt_generated/
+.recommenders/
+
+# ===================================
+# NetBeans
+# ===================================
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ===================================
+# VS Code
+# ===================================
+.vscode/
+
+# ===================================
+# Spring Boot
+# ===================================
+HELP.md
+spring-boot-starter-*/
+
+# ===================================
+# Sensitive config — NEVER commit credentials
+# ===================================
+# If you keep credentials in application.properties, uncomment the next line:
+# src/main/resources/application.properties
+
+# Always ignore these (local overrides):
+src/main/resources/application-local.properties
+src/main/resources/application-secret.properties
+src/main/resources/application-*.local.properties
+
+# ===================================
+# Environment files
+# ===================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ===================================
+# Logs
+# ===================================
+logs/
+*.log
+*.log.*
+
+# ===================================
+# OS junk
+# ===================================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ===================================
+# Misc
+# ===================================
+*.pid
+*.seed
+*.pid.lock
