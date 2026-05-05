@@ -1,7 +1,13 @@
 import axios from 'axios'
 
+// In dev: baseURL is '/api' (Vite proxy forwards to localhost:8080)
+// In prod: baseURL is full Render URL from env var
+const API_BASE = import.meta.env.VITE_API_BASE_URL
+  ? `${import.meta.env.VITE_API_BASE_URL}/api`
+  : '/api'
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: API_BASE,
   headers: { 'Content-Type': 'application/json' }
 })
 
@@ -22,7 +28,11 @@ api.interceptors.response.use(
       const refreshToken = localStorage.getItem('refreshToken')
       if (refreshToken) {
         try {
-          const { data } = await axios.post('/api/auth/refresh-token', { refreshToken })
+          // Use same base for refresh endpoint
+          const refreshUrl = import.meta.env.VITE_API_BASE_URL
+            ? `${import.meta.env.VITE_API_BASE_URL}/api/auth/refresh-token`
+            : '/api/auth/refresh-token'
+          const { data } = await axios.post(refreshUrl, { refreshToken })
           const newToken = data.data.accessToken
           localStorage.setItem('accessToken', newToken)
           localStorage.setItem('refreshToken', data.data.refreshToken)
