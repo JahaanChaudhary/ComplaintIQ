@@ -12,7 +12,6 @@ backend/*.log
 
 # ===== BACKEND SECRETS - NEVER COMMIT =====
 backend/src/main/resources/application-local.properties
-backend/src/main/resources/application-prod.properties
 backend/.env
 backend/.env.local
 
