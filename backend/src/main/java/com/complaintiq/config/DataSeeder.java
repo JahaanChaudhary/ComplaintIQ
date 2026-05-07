@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
-@Slf4j @Component @Profile("dev") @RequiredArgsConstructor
+@Slf4j @Component @Profile({"dev", "prod", "local"}) @RequiredArgsConstructor
 public class DataSeeder implements CommandLineRunner {
     private final AppUserRepository appUserRepository;
     private final CustomerRepository customerRepository;
